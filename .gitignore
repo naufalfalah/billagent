@@ -1,0 +1,64 @@
+# Real invoice data and hand-labeled ground truth must NEVER be committed.
+data/real/
+data/ground_truth/
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+service-account*.json
+credentials.json
+*-credentials.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.Python
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- uv ---
+# uv.lock IS committed (pinned deps) — do not ignore it.
+
+# --- Django ---
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+*.log
+
+# --- Testing / coverage / type-checking ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter (if used for exploration) ---
+.ipynb_checkpoints/
+
+# --- Google Cloud / deploy ---
+.gcloud/
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# --- Editors / IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
